@@ -1,0 +1,34 @@
+﻿@model MailSettingsModel
+
+<form asp-controller="EmailSettings" asp-action="SaveSettings" method="post">
+    <div>
+        <label for="ClientName">ClientName</label>
+        <input type="text" asp-for="ClientName" />
+    </div>
+    <div>
+        <label for="ClientEmail">ClientEmail</label>
+        <input type="text" asp-for="ClientEmail" />
+    </div>
+
+    <div>
+        <label for="Mail">Mail:</label>
+        <input type="text" asp-for="Mail" />
+    </div>
+    <div>
+        <label for="DisplayName">Display Name:</label>
+        <input type="text" asp-for="DisplayName" />
+    </div>
+    <div>
+        <label for="Password">Password:</label>
+        <input type="password" asp-for="Password" />
+    </div>
+    <div>
+        <label for="Host">Host:</label>
+        <input type="text" asp-for="Host" />
+    </div>
+    <div>
+        <label for="Port">Port:</label>
+        <input type="number" asp-for="Port" />
+    </div>
+    <button type="submit">Save</button>
+</form>
